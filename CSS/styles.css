@@ -1,0 +1,176 @@
+/*
+CSS Syntax/rule
+1. selector { property: value; }
+- Inside the selector lies many rules(property:value pair)
+- Each rule ends with a semicolon.
+- Best Practice: Keep all the rules in alphabetical order
+  for organisation.
+- Selector can be Tag Selectors/Class Selectors/id selectors.
+
+  - Tag Selectors
+  Some of these tags have predefined CSS styles that are
+  applied by the browsers.
+
+  - Class Selectors
+  Img, paragraph, anchor tags are usually not styled the same way.
+  Hence, can use the Class attributes to group them and use
+  Class Selectors to style them more specifically.
+  One HTML Element can have >1 class attribute.
+
+  - id Selectors
+  Similar to Class selectors in the way that both are specific
+  compared to Tag Selectors.
+  id Selectors are usually used more sparingly.
+
+  However, you should only have 1 tag element instance on a
+  Particular page with the unique id attribute name, a unique Identifier.
+  Eg. 1 Heading or 1 Navigation bar
+  IDE does not seem to throw errors when multiple HTML elements
+  have the same id attribute.
+  Reference Link:
+  https://softwareengineering.stackexchange.com/questions/127178/two-html-elements-with-same-id-attribute-how-bad-is-it-really
+  Quote: "HTML renderers are very forgiving when it comes to HTML
+  rendering they tolerate duplicate IDs. This should be
+  avoided if at all possible and strictly avoided when
+  programmatically accessing elements by IDs in JavaScript.
+  I'm not sure what getElementById function should return
+  when several matching elements are found? "
+  Additionally, You only can have 1 id attribute for one HTML Element.
+  If there are multiple id for a single HTML element, all the ids will
+  be invalid, and the styles for all the id will not be applied.
+
+  In fact, linter for CSS on Atom actually suggests against using ids
+  as a selector to change the style. However, angela dont highly
+  agree with that, as there are cases where it can be useful, but do
+  have to think very carefully when you do decide to use it
+
+  <!-- Example of a HTML element with multiple classes & 1 unique-id
+  <img class="brocoli circular" id="unique-id"
+  src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/325/broccoli_1f966.png"
+  alt="brocoli-img">
+
+  - Pseudo Class Selectors
+  Eg. :active, a:hover
+
+CSS Keywords References
+https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+
+Inline CSS
+Eg. Body tag styling
+<body style="background-color: grey;">
+
+Internal CSS.
+LInking CSS with HTML code.
+Implement CSS code across a single entire web page,
+instead of just in individual html elements/Inline css.
+
+External CSS
+Implement CSS code across multiple web pages.
+
+CSS Style priority (highest priority at the top)
+Inline CSS >
+  Internal CSS >
+    External CSS (Class Selectors & id Selectors > Tag Selectors) >
+      Default Browser Tag  Selectors
+
+select the html tag to edit, and write the
+changes in the {}.
+
+There might not be any visible style changes to the
+horizontal rule (hr) tag, because the browser
+might have some CSS default values.
+https://www.w3schools.com/cssref/css_default_values.php
+Can overwrite the default browser value by specifying
+a new value for it using CSS.
+
+One of the most impt concepts in learning CSS is
+realising that pretty much everything that exists on
+the web page are essentially just boxes.
+Pesticide Plugin for chrome/edge.
+In the details of plugin, make sure to enable
+"Allow access to file URLs". This enable is to allow
+you to develop your website locally and to allow you
+to use Pesticide on your local websites.
+The plugin is able to toggle the boxes to appear/disappear.
+*/
+/*-------------------CSS TAG SELECTORS----------------------*/
+body{
+  background-color: #E3FDFD;
+
+  /*Unable to change the CSS height value for the HTML body
+  element, as the element has some browser default CSS values
+  to prevent that. Eg. display: block;*/
+}
+
+hr{
+  /*background-color: white;*/
+  /*border-style: top&bottom&left&right;    or
+                top, right, bottom, left;   or
+                top, left&right, bottom;    or
+                top&bottom, left&right;*/
+  border-style: none;
+  /*more specific way of giving the border edge
+  a style*/
+  border-top-style: dotted;
+  border-color: grey;
+  /*border-width: represents the thickness of a border edge*/
+  border-width: 5px;
+  /*By setting hr html tag border-style to none, the box of the
+  horizonal rule now has no size as the CSS default value
+  only sets the border-width, however now there is no border.
+  It will be literally zero pixels high.
+  Set height value to give the box a size.*/
+  height: 0px;
+  /*Instead of setting a hardcoded value to height/width CSS
+  values, can specify percentage of the browser.*/
+  width: 10%;
+
+}
+
+p{
+  width: 100%;
+}
+
+h3{
+  color: #66BFBF;
+}
+
+h1{
+  color: #66BFBF;
+}
+
+/*-------------------CSS CLASS SELECTORS----------------------*/
+/*eg.
+They have to be declared in the Element Tags Class Attribute first.
+.bacon{
+  background-color: green;
+}
+
+.brocoli{
+  background-color: red;
+}
+
+.circular{
+  border-radius: 20%
+}
+*/
+
+/*-------------------id CLASS SELECTORS----------------------*/
+/*eg.
+They have to be declared in the Element Tags id Attribute first.
+#heading
+{
+  color: blue;
+}
+
+*/
+
+/*-------------------PSEUDO CLASS SELECTORS----------------------*/
+/*
+
+Selects any <img> element when "hovered"
+img:hover{
+  background-color: gold;
+}
+
+*/

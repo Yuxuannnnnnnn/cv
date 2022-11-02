@@ -30,9 +30,42 @@ html code
     -->
   <meta charset="utf-8">
   <title> Yu Xuan's Personal Site</title>
+
+  <!-- Link Tag
+
+  rel attribute - relationship
+
+  href attribute - if a href starts off with a
+  forward slash( / ), then it's pointing towards the root of
+  your website. However, when you have a static website
+  that is not yet hosted anywhere, you cant tap into
+  the file using root. Testing locally will result in
+  "C:/css/styles.css" address.
+
+  Link to an external CSS file
+  -->
+  <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 
 <!-- body-->
+<!-- background-color is a CSS property.
+Can use color words or hexadecimal values to
+define the background-color.
+
+Change background color
+https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
+
+A really good tool/website for finding beautiful colors
+and beautiful color Palette is Colorhunt.co.
+
+One of the plugins called: pigments, that was
+installed, is highlighing that color to us to
+show us what it'll look like when it is
+implemented.
+CSS Color keywords (without having to dive into hexadecimal code):
+https://developer.mozilla.org/en-US/docs/Web/CSS/named-color#syntax
+-->
 <body>
   <!-- Introduction Table
   Cellspacing attribute defines the size of the space between 2 cells
@@ -44,11 +77,14 @@ html code
         alternative text attribute incase picture cannot be rendered,
         this text also helps with google search engine optimisation or
         getting your website ranking for certain key words.
+
+        Class attributes - for CSS Class selctors.
         -->
-        <img src="images/Yu Xuan Profile Picture.png"
+        <img class="" src="images/Yu Xuan Profile Picture.png"
             alt="Yu Xuan Profile Picture"
             width="200"
             height="200" >
+
       </td>
       <td>
         <h1> Yu Xuan </h1>
