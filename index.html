@@ -1,0 +1,196 @@
+<!DOCTYPE html> <!-- HTML5 version -->
+<!-- this open/closing tag tells our
+browser that everything inbetween is
+html code
+-->
+<html lang="en" dir="ltr">
+<!-- Head -->
+
+<head>
+  <!-- utf-8 is the unicode
+    standard encoding,
+    includes all international symbols,
+    also includes emojis.
+    Everything that is unicode can be
+    encoded correctly using UTF-8.
+    This gives your website the max
+    chance of being rendered correctly
+    on browsers that are from international
+    visitors.
+    -->
+  <!-- Other meta element attributes include:
+    ("description" give info to search engine
+     about the content of the website)
+    name = "description",
+    name = "keywords",
+    name = "author",
+    name = "viewport",
+    these meta tags tell the browser how
+    it should render or display the webpage
+    -->
+  <meta charset="utf-8">
+  <title> Yu Xuan's Personal Site</title>
+</head>
+
+<!-- body-->
+<body>
+  <!-- Introduction Table
+  Cellspacing attribute defines the size of the space between 2 cells
+  in a percentage value or pixels.
+  -->
+  <table cellspacing ="20">
+    <tr>
+      <td>  <!-- image tag, with source link attribute &
+        alternative text attribute incase picture cannot be rendered,
+        this text also helps with google search engine optimisation or
+        getting your website ranking for certain key words.
+        -->
+        <img src="images/Yu Xuan Profile Picture.png"
+            alt="Yu Xuan Profile Picture"
+            width="200"
+            height="200" >
+      </td>
+      <td>
+        <h1> Yu Xuan </h1>
+        <!-- paragraph tag,
+        gets a new line,
+        the text inside gets grouped tgt into
+        the same paragraph
+        -->
+        <p>
+          <!--Try not to use the Italicise tag,
+          instead use the emphasis tag,
+          which conveys more info & is just not
+          about the style.
+          When writing html code, we are more concerned
+          with structuring our code, rather then just
+          caring about how it looks or how it appears.
+          Likewise, Bold  tag vs Strong tag.
+          -->
+          <em> Software Engineer intern at <strong>ST Engineering</strong></em>
+        </p>
+        <p>
+          Avid Learner of new technology and has a keen interest in solving problems
+          with real-time technology using c++ techniques.
+          Gained experience and knowledge in the field of making real-time
+          applications such as game engines.
+          Has worked in team projects and acquired the essentials of communication
+          and being a team player.
+          A lifelong learner and always looking to learn from different areas of
+          software engineering.
+          <br>
+          <br>
+          Feel free to connect with me on
+          <!-- anchor tag, link to another page-->
+          <a href="https://www.linkedin.com/in/luoyuxuan/">Linkedin!</a>
+        </p>
+        <a href="contact-me.html"> Contact Me </a>
+
+      </td>
+    </tr>
+  </table>
+
+  <hr> <!-- horizontal read/line -->
+  <h3> Work Experience </h3>
+  <!-- Unordered List tag, bullet list -->
+  <ul>
+    <!-- list item tag, enclosed a bullet point,
+    Ordered list tag, list is numbered
+    -->
+    <!-- table tag,
+    tables have rows, cells.
+    Table structure includes headers, body & footer.
+    The reason why there might be different sections of our table,
+    is because sometimes we might want to selct and isolate the
+    table header and the table body to style it differently
+    via CSS/Javascript.
+
+    Some of the table attributes may be deprecated, the reason is so
+    because HTML is for structure, CSS for styling, javascript for behaviour.
+    Even though it is possible to affect the style of your website through
+    HTML attributes or thru using different HTML elements, you have to try
+    & resist when you can.
+    -->
+    <table>
+      <!-- table header -->
+      <thead>
+
+      </thead>
+      <!-- table body-->
+      <tbody>
+        <!-- 1st table row tag-->
+        <tr>
+          <!-- 1st table cell tag -->
+          <td> <li>ST Engineering (Centre of Excellence - Extended Reality)</li></td>
+          <!-- 2nd table cell tag -->
+          <td> May 2022 – Dec 2022 (Ongoing) </td>
+        </tr>
+        <!-- 2nd table row tag -->
+        <tr>
+          <!-- 1st table cell tag -->
+          <td>
+            <em>Software Engineer Intern</em>
+            <ul>
+              <li>Skills Used: Multiplayer/Simulation Software/Unreal engine 5/
+                Unreal Engine 4/C++/Blueprint Scripting
+              </li>
+              <li>
+                Developing XR (3D, Digital Twin, VR) Training Simulations with
+                Unreal Engine 4/5 for the Civil Defence.
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+      <!-- table footer -->
+      <tfoot>
+      </tfoot>
+      </tfoot>
+    </table>
+  </ul>
+  <hr>
+  <h3> Project Experience </h3>
+  <ul>
+    <li> <a href="https://games.digipen.edu/games/traveller">Traveller</a> </li>
+    <li> Multiplayer LAN Game </li>
+    <li> Password Recovery Tool for MD5 Hash using CUDA C/C++ </li>
+  </ul>
+  <hr>
+  <h3> Skills </h3>
+  <!-- Nested Table,
+  2 or more tables inside a table.
+  The structure may be abit confusing, this is
+  one of the reasons why using HTML to affect the
+  layout is not such a great idea. By doing this exercise,
+  able to get the grips with using tables, table rows,
+  table datas.
+  Nested table removed.
+  -->
+  <table Cellspacing = "5">
+    <!-- table row -->
+    <tr>
+      <!-- table cell - Skill-->
+      <td> C/C++ </td>
+      <!-- table cell - rating-->
+      <td>⭐⭐⭐⭐⭐</td>
+    </tr>
+    <!-- table row -->
+    <tr>
+      <!-- table cell - Skill-->
+      <td> C Cuda </td>
+      <!-- table cell - rating-->
+      <td>⭐⭐⭐⭐</td>
+    </tr>
+    <!-- table row -->
+    <tr>
+      <!-- table cell - Skill-->
+      <td> Python </td>
+      <!-- table cell - rating-->
+      <td>⭐⭐⭐</td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>

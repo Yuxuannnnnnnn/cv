@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <h1>My Contact Details</h1>
+    <p>Email: luoyuxuan43@gmail.com</p>
+    <hr>
+    <!-- form tag
+    In order for a form to work properly,
+    requires behaviour, javascript.
+    This by itself does not do anything,
+    requires Label & input tags.
+
+    Action attribute defines what should happen
+    when you click submit. Default is that it
+    takes u to the home page upon clicking submit.
+
+    Action attribute - "mailto:" opens up
+    your default mail client, and it puts in the
+    email address that you specify after the colon.
+    For this to work on the users, in the browser
+    settings page, under Site permissions, under
+    Protocol Handlers, enable sites to become default
+    handlers for protocols.
+
+    Delete Class attribute.
+
+    Enctype Attribute - Encoding type
+    "text/plain" specifies that our form is encoded in plain text,
+    so that when it launches the mail app upon clicking submit, the
+    message in the email will be as typed.
+    -->
+    <form action="mailto:luoyuxuan43@gmail.com" method="post" enctype="text/plain">
+      <!-- Label tag.
+      Just text
+      -->
+      <label for=""> Your Name: </label>
+      <!-- Input tag,
+      allow users to store/type the information,
+      Has many types of input.
+      Eg. text, submit, file, date, radio, range.
+
+      Name attribute - identifier/Classifier of
+      the data that is inside the input.
+      Eg. classifying the data in an email
+      when user clicks submits on the post to
+      send an email.
+      -->
+      <input type="text" name="yourName" value="">
+      <br>
+      <label for="">Your Email:</label>
+      <!-- Password input.
+      Everything you type here is masked
+      <input type="Password" name="" value="">
+      -->
+
+      <!-- Email input
+      Does some basic validation, checks for @ sign
+      and something after the @ sign. Also checks
+      for invalid symbols.
+      -->
+      <input type="email" name="yourEmail" value="">
+      <br>
+      <label for="">Your Message:</label>
+      <br>
+      <!-- text box
+      rows & cols attributes define the default
+      size, but the user is able to modify the size
+      of the textbox later on.
+      -->
+      <textarea name="name" rows="10" cols="30"></textarea>
+      <br>
+      <!-- have to delete the value attribute for submit input
+      type, inorder for the "submit" word to appear.
+       -->
+      <input type="submit" name="">
+
+    </form>
+  </body>
+</html>
